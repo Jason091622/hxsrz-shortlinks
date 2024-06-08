@@ -1,0 +1,7 @@
+/copr https://hxsrz.eu.org/copyright.html 301
+/pp https://hxsrz.eu.org/privacy.html 301
+
+/arc/* https://hxsrz.eu.org/archives/:splat.html 301
+/* https://hxsrz.eu.org/:splat.html 301
+
+/ https://hxsrz.eu.org/ 301
