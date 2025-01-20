@@ -6,18 +6,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Redirecting...</title>
-    <meta name="robots" content="noindex, nofollow" />
+    <script>
+        window.onload = function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var targetUrl = urlParams.get('b');
+            if (targetUrl) {
+                window.location.href = targetUrl;
+            } else {
+                alert("Target URL is not specified.");
+            }
+        };
+    </script>
 </head>
 <body>
-    <div id="TestDiv"></div>
+    <p>Redirecting...</p>
 </body>
-<script>
-    window.onload = function() {
-        const url = window.location.search;
-        document.getElementById("TextDiv").innerHTML = url;
-        window.location.replace(url);
-    };
-</script>
 </html>
