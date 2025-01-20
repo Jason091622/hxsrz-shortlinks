@@ -10,9 +10,14 @@
     <title>Redirecting...</title>
     <meta name="robots" content="noindex, nofollow" />
 </head>
+<body>
+    <div id="TestDiv"></div>
+</body>
 <script>
     window.onload = function() {
-        window.location.replace(window.location.search);
+        const url = window.location.search;
+        document.getElementById("TextDiv").innerHTML = url;
+        window.location.replace(url);
     };
 </script>
 </html>
